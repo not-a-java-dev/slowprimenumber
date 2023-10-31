@@ -11,6 +11,7 @@ bool isPrime(int x) {
 }
 int main() {
     int num;
+    std::cout << "Input: ";
     std::cin >> num;
     if (!std::cin.good()) {
         printf("invalid input");
