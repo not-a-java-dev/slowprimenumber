@@ -2,3 +2,5 @@
 *.exe
 ### VisualStudioCode ###
 /.vscode/
+**/.vscode/
+.*
