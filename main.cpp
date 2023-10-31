@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <iostream>
 
 bool isPrime(int x) {
     for (int i = 2; i <= x-1; i++) {
@@ -10,8 +10,12 @@ bool isPrime(int x) {
     return true;
 }
 int main() {
-    //change ya number
-    int num = 5;
+    int num;
+    std::cin >> num;
+    if (!std::cin.good()) {
+        printf("invalid input");
+        return 0;
+    }
     if (isPrime(num)) {
         printf("true");
     } else {
