@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-
+#include <string>
 bool isPrime(int x) {
     for (int i = 2; i <= x-1; i++) {
         if (x % i == 0) {
@@ -8,6 +8,25 @@ bool isPrime(int x) {
         }
     }
     return true;
+}
+void rangeTest(int max) {
+    if (max == 0) {
+        int i = 0;
+        //lol get rekt pc
+        while (true) {
+            i++;
+            if (isPrime(i)) {
+                std::cout << std::to_string(i) << " is prime!\n";
+            }
+        }
+        
+        return;
+    }
+    for (int i = 0; i < max; i++) {
+        if (isPrime(i)) {
+            std::cout << std::to_string(i) << " is prime!\n";
+        }
+    }
 }
 int main() {
     int num;
