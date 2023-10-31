@@ -1,4 +1,4 @@
 # bye bye exe files!
 *.exe
 ### VisualStudioCode ###
-.vscode/**/*
+/.vscode
