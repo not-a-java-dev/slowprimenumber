@@ -2,10 +2,11 @@
 #include <iostream>
 #include <string>
 bool isPrime(int x) {
-    for (int i = 2; i <= x-1; i++) {
-        if (x % i == 0) {
-            return false;
-        }
+    if (x < 0 || x == 1) {
+        return false;
+    }
+    for (int i = 1; i <= x-1; i++) {
+        return !(x % i == 0); 
     }
     return true;
 }
