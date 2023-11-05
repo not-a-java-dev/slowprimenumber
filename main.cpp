@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
-bool isPrime(int x) {
+bool isPrime(int n) {
     // i hate my life
-    for (int i = 2; i <= x-1; i++) {
-        if (x % i == 0) {
+    for (int i = 2; i <= n-1; i++) {
+        if (n % i == 0) {
             return false;
-        } 
+        }
     }
     return true;
 }
@@ -41,6 +41,6 @@ int main() {
     } else {
         std::cout << "no\n";
     }
-    rangeTest(0);
+    rangeTest(100);
     return 0;
 }
