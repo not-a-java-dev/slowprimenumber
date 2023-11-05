@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <iostream>
 #include <string>
 bool isPrime(int x) {
@@ -33,14 +32,14 @@ int main() {
     std::cout << "Input: ";
     std::cin >> num;
     if (!std::cin.good()) {
-        printf("invalid input");
+        std::cout << "invalid input\n";
         //kms
         return -1;
     }
     if (isPrime(num)) {
-        printf("true\n");
+        std::cout << "yes\n";
     } else {
-        printf("false\n");
+        std::cout << "no\n";
     }
     rangeTest(0);
     return 0;
