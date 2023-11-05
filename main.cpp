@@ -10,8 +10,8 @@ bool isPrime(int x) {
     }
     return true;
 }
-void rangeTest(int max, int printFrom) {
-    if (max == 0) {
+void rangeTest(int max) {
+    if (max <= 0) {
         int i = 0;
         //lol get rekt pc
         while (true) {
@@ -42,6 +42,6 @@ int main() {
     } else {
         printf("false\n");
     }
-    rangeTest(0,1000000);
+    rangeTest(0);
     return 0;
 }
