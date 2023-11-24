@@ -1,4 +1,6 @@
 # bye bye exe files!
 *.exe
+.*
+!.gitignore
 ### VisualStudioCode ###
 .vscode/
