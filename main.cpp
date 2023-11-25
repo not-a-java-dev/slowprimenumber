@@ -2,7 +2,6 @@
 #include <string>
 #include <cmath>
 bool isPrime(int n) {
-    // i hate my life
     if (n <= 1) {
        return false;
     }
@@ -43,7 +42,6 @@ int main() {
     std::cin >> num;
     if (!std::cin.good()) {
         std::cout << "invalid input\n";
-        //kms
         return -1;
     }
     if (isPrime(num)) {
