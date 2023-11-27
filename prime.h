@@ -1,4 +1,19 @@
 namespace prime {
+   // Less efficient version of the prime function
+   // When being fast is not neccesary
+   bool isPrimeS(int n) {
+      if (n <= 1) {
+	 return false;
+      }
+      for (int i = 2; i < n-1; i++) {
+	 if (n % i == 0) {
+	    return false;
+	 }
+      }
+      return true;
+   }
+   // Cant get more efficient than this!
+   // Or can it?
    bool isPrime(int n) {
        // Every negative number is not prime
        // And 1 isnt prime because he doesnt deserve it

@@ -2,6 +2,25 @@
 #include <string>
 #include <cmath>
 #include "prime.h"
+void rangeTestS(int max) {
+    if (max <= 0) {
+        int i = 0;
+        //lol get rekt pc
+        while (true) {
+            i++;
+            if (prime::isPrimeS(i)) {
+                std::cout << std::to_string(i) << " is prime!\n";
+            }
+        }
+    } else {
+        for (int i = 0; i < max; i++) {
+            if (prime::isPrimeS(i)) {
+                std::cout << std::to_string(i) << " is prime!\n";
+            }
+        }
+    }
+}
+
 void rangeTest(int max) {
     if (max <= 0) {
         int i = 0;
@@ -34,5 +53,6 @@ int main() {
         std::cout << "no\n";
     }
     rangeTest(100);
+    rangeTestS(100);
     return 0;
 }
