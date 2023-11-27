@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <cmath>
 #include "prime.h"
 void rangeTestS(int max) {
     if (max <= 0) {
